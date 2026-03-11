@@ -11,6 +11,7 @@ so when I played noraml or hard version in both, it says go higher or lower(exac
   (for example: "the secret number kept changing" or "the hints were backwards").
   1. The hints were backwards
   2. I cannot start a newgame when I press a new game button
+  (for example: "the hints were backwards").
 
 ---
 
@@ -43,6 +44,7 @@ The secret number kept changing because Streamlit reruns the whole script every 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 - What change did you make that finally gave the game a stable secret number?
 I made the secret number persist in session state by initializing it only once and reusing it on every rerun, instead of recreating it during normal gameplay
+- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
 ---
 
