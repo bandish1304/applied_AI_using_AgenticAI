@@ -25,13 +25,16 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [] Describe the game's purpose.
+   The purpose of this game is to let the player guess a secret number within a limited number of attempts based on the selected difficulty. The app gives feedback after each guess and tracks attempts, score, and guess history.
+- [] Detail which bugs you found.
+   I found three main bugs: the hint direction was wrong which was "Too High" and "Too Low" feedback was misleading, game logic and UI logic were mixed together in one file, and state behavior around gameplay was inconsistent enough to make debugging harder.
+- [] Explain what fixes you applied.
+   I refactored core functions like get_range_for_difficulty, parse_guess, check_guess, update_score into logic_utils.py, updated app.py to import and use them, and fixed hint mapping so outcomes now match the correct "Go LOWER" or "Go HIGHER" message.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ] [![alt text](image.png)]
 
 ## 🚀 Stretch Features
 

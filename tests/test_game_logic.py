@@ -14,3 +14,10 @@ def test_guess_too_low():
     # If secret is 50 and guess is 40, hint should be "Too Low"
     result = check_guess(40, 50)
     assert result == "Too Low"
+
+
+def test_numeric_comparison_regression_for_hint_direction():
+    # Regression: avoid lexicographic/string-style comparisons that invert hints.
+    # 9 is less than 10 numerically, so outcome must be "Too Low".
+    result = check_guess(9, 10)
+    assert result == "Too Low"
