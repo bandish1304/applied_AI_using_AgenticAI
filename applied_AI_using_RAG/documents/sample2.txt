@@ -1,0 +1,3 @@
+Another example document for the RAG system.
+
+This file contains additional information that can be retrieved and used by the AI to answer user queries more accurately.

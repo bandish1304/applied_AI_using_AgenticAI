@@ -1,0 +1,5 @@
+This is a sample document for RAG enhancement testing.
+
+RAG (Retrieval-Augmented Generation) systems combine retrieval from external sources with generative AI models to improve answer quality and factual accuracy.
+
+This document is used to demonstrate how custom documents can be retrieved and used to enhance AI output.
