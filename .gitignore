@@ -12,6 +12,7 @@ ENV/
 *.egg-info/
 .eggs/
 pip-wheel-metadata/
+.venv312/
 
 # Environment and config
 .env
